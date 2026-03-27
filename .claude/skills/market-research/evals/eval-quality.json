@@ -1,0 +1,46 @@
+{
+  "name": "market-research-quality",
+  "description": "Tests completeness and quality of market research output",
+  "criteria": [
+    {
+      "name": "has_executive_summary",
+      "description": "Includes concise executive summary",
+      "check": "output contains Executive Summary with 3 or fewer sentences"
+    },
+    {
+      "name": "has_market_sizing",
+      "description": "Includes TAM/SAM/SOM with dollar amounts",
+      "check": "output contains TAM, SAM, and SOM with $ values"
+    },
+    {
+      "name": "has_competitors",
+      "description": "Identifies at least 3 competitors with analysis",
+      "check": "output contains competitor table or list with 3+ entries"
+    },
+    {
+      "name": "has_customer_profile",
+      "description": "Defines ideal customer profile",
+      "check": "output contains customer profile or ICP section"
+    },
+    {
+      "name": "has_opportunity_score",
+      "description": "Includes numeric opportunity score",
+      "check": "output contains Opportunity Score with X/10 rating"
+    },
+    {
+      "name": "has_recommendation",
+      "description": "Clear Go/No-Go recommendation with reasoning",
+      "check": "output contains Go or No-Go or Investigate recommendation"
+    },
+    {
+      "name": "has_confidence_level",
+      "description": "States confidence level of findings",
+      "check": "output contains Confidence: High/Medium/Low"
+    },
+    {
+      "name": "no_unsourced_claims",
+      "description": "Doesn't present speculation as fact",
+      "check": "claims are qualified with confidence levels or sources"
+    }
+  ]
+}

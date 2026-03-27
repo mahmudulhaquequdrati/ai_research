@@ -1,0 +1,31 @@
+{
+  "name": "context-loader-quality",
+  "description": "Tests that context loading is efficient and relevant",
+  "criteria": [
+    {
+      "name": "classifies_task",
+      "description": "Correctly classifies the task type",
+      "check": "output identifies task as software/research/content/business/social/automation/mixed"
+    },
+    {
+      "name": "loads_core",
+      "description": "Always loads core context (CLAUDE.md, MEMORY.md)",
+      "check": "output confirms CLAUDE.md and MEMORY.md were checked"
+    },
+    {
+      "name": "selective_loading",
+      "description": "Only loads task-relevant memory files, not everything",
+      "check": "output does NOT load all memory files indiscriminately"
+    },
+    {
+      "name": "summarizes_context",
+      "description": "Provides concise summary of loaded context",
+      "check": "output ends with brief summary of what was loaded and key facts"
+    },
+    {
+      "name": "respects_token_budget",
+      "description": "Stays within token budget guidelines",
+      "check": "does not load excessive context for simple tasks"
+    }
+  ]
+}

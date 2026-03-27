@@ -1,0 +1,41 @@
+{
+  "name": "self-eval-quality",
+  "description": "Tests that self-evaluation output is thorough and actionable",
+  "criteria": [
+    {
+      "name": "has_task_audit",
+      "description": "Includes task audit with original request quoted",
+      "check": "output contains Requested and Delivered sections"
+    },
+    {
+      "name": "has_count_match",
+      "description": "Explicitly counts requested vs delivered",
+      "check": "output contains count comparison with PASS or FAIL"
+    },
+    {
+      "name": "has_scoring_table",
+      "description": "Includes quality scoring table with all 5 dimensions",
+      "check": "output contains Completeness, Correctness, Quality, Efficiency, Innovation scores"
+    },
+    {
+      "name": "has_overall_score",
+      "description": "Calculates weighted overall score",
+      "check": "output contains Overall score as weighted average"
+    },
+    {
+      "name": "has_root_cause",
+      "description": "For issues, includes root cause analysis",
+      "check": "if score < 8, output contains why analysis"
+    },
+    {
+      "name": "has_learning",
+      "description": "Captures learnings for memory",
+      "check": "output contains specific improvement actions"
+    },
+    {
+      "name": "updates_memory",
+      "description": "Actually writes to memory files",
+      "check": "agent_performance_log.md is updated with new entry"
+    }
+  ]
+}

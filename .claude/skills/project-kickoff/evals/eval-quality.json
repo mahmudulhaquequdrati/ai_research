@@ -1,0 +1,41 @@
+{
+  "name": "project-kickoff-quality",
+  "description": "Tests output quality of project kickoff plans",
+  "criteria": [
+    {
+      "name": "has_requirement_count",
+      "description": "Plan explicitly counts total requirements",
+      "check": "output contains numbered requirements with total count"
+    },
+    {
+      "name": "has_task_table",
+      "description": "Plan includes structured task breakdown table",
+      "check": "output contains task table with agent assignments and sizes"
+    },
+    {
+      "name": "has_phases",
+      "description": "Plan organizes work into execution phases",
+      "check": "output contains Phase 1, Phase 2 etc with task assignments"
+    },
+    {
+      "name": "has_dependencies",
+      "description": "Plan identifies task dependencies",
+      "check": "output contains dependency information (Depends On or sequential notation)"
+    },
+    {
+      "name": "has_risks",
+      "description": "Plan includes risk assessment with mitigations",
+      "check": "output contains Risks section with mitigation plans"
+    },
+    {
+      "name": "has_success_criteria",
+      "description": "Plan includes measurable success criteria",
+      "check": "output contains Success Criteria with checkboxes"
+    },
+    {
+      "name": "parallel_optimization",
+      "description": "Plan uses parallel execution where possible",
+      "check": "output indicates parallel tasks in at least one phase"
+    }
+  ]
+}

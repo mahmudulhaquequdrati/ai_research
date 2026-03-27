@@ -1,0 +1,36 @@
+{
+  "name": "code-review-quality",
+  "description": "Tests output quality of code reviews",
+  "criteria": [
+    {
+      "name": "has_summary",
+      "description": "Review includes a summary section",
+      "check": "output contains '### Summary' or '## Summary'"
+    },
+    {
+      "name": "has_issues",
+      "description": "Review lists specific issues with severity",
+      "check": "output contains CRITICAL or HIGH or MEDIUM or LOW severity labels"
+    },
+    {
+      "name": "has_score",
+      "description": "Review includes a numeric score",
+      "check": "output contains 'Score:' followed by a number /10"
+    },
+    {
+      "name": "has_verdict",
+      "description": "Review includes approval verdict",
+      "check": "output contains APPROVE or REQUEST CHANGES or BLOCK"
+    },
+    {
+      "name": "has_file_references",
+      "description": "Issues reference specific files and lines",
+      "check": "output contains file:line pattern references"
+    },
+    {
+      "name": "has_fix_suggestions",
+      "description": "Issues include suggested fixes",
+      "check": "output contains 'Fix:' suggestions for each issue"
+    }
+  ]
+}

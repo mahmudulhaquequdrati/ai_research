@@ -1,0 +1,21 @@
+{
+  "name": "code-review-invocation",
+  "description": "Tests that the code-review skill is invoked correctly",
+  "tests": [
+    {
+      "input": "Review this PR for security issues",
+      "expected_skill": "code-review",
+      "should_invoke": true
+    },
+    {
+      "input": "Check the code in src/auth.ts for bugs",
+      "expected_skill": "code-review",
+      "should_invoke": true
+    },
+    {
+      "input": "What does this function do?",
+      "expected_skill": "code-review",
+      "should_invoke": false
+    }
+  ]
+}

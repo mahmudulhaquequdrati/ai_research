@@ -1,0 +1,36 @@
+{
+  "name": "agent-trainer-quality",
+  "description": "Tests that training cycles produce meaningful improvements",
+  "criteria": [
+    {
+      "name": "reads_performance_log",
+      "description": "Checks agent performance history before diagnosing",
+      "check": "process reads agent_performance_log.md"
+    },
+    {
+      "name": "identifies_specific_issue",
+      "description": "Pinpoints specific issue, not vague complaints",
+      "check": "output contains specific symptom and root cause"
+    },
+    {
+      "name": "makes_targeted_change",
+      "description": "Change is targeted, not a full rewrite",
+      "check": "edit is surgical — modifies specific section, not entire file"
+    },
+    {
+      "name": "explains_rationale",
+      "description": "Explains why the change should help",
+      "check": "output contains reasoning for the change"
+    },
+    {
+      "name": "logs_change",
+      "description": "Records the change in performance log",
+      "check": "agent_performance_log.md is updated with the training action"
+    },
+    {
+      "name": "testable_improvement",
+      "description": "The improvement can be verified",
+      "check": "output describes how to test if the change worked"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "deploy-checklist-quality",
+  "description": "Tests that deploy checklist covers all critical areas",
+  "criteria": [
+    {
+      "name": "runs_automated_checks",
+      "description": "Executes automated pre-deploy script",
+      "check": "output shows automated check results (PASS/FAIL/WARN)"
+    },
+    {
+      "name": "covers_security",
+      "description": "Checks for secrets, auth, input validation",
+      "check": "output includes security checklist items"
+    },
+    {
+      "name": "covers_tests",
+      "description": "Verifies tests are passing",
+      "check": "output mentions test status"
+    },
+    {
+      "name": "has_rollback_plan",
+      "description": "Includes rollback procedure",
+      "check": "output mentions rollback plan or procedure"
+    },
+    {
+      "name": "gives_clear_verdict",
+      "description": "Clear READY or BLOCKED verdict",
+      "check": "output contains READY or BLOCKED status"
+    }
+  ]
+}

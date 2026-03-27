@@ -1,0 +1,36 @@
+{
+  "name": "content-strategy-quality",
+  "description": "Tests content output quality and brand consistency",
+  "criteria": [
+    {
+      "name": "has_strong_hook",
+      "description": "Content opens with an attention-grabbing hook",
+      "check": "first 2 sentences are specific and compelling, not generic"
+    },
+    {
+      "name": "has_clear_cta",
+      "description": "Content ends with clear call to action",
+      "check": "output contains explicit CTA"
+    },
+    {
+      "name": "platform_formatted",
+      "description": "Content is formatted for the target platform",
+      "check": "formatting matches platform specs (LinkedIn short paragraphs, Twitter char limit, etc.)"
+    },
+    {
+      "name": "no_filler_words",
+      "description": "No filler words or generic AI openings",
+      "check": "output does NOT contain 'very', 'really', 'basically', 'AI is transforming', 'in today's'"
+    },
+    {
+      "name": "brand_voice",
+      "description": "Matches AI Skills brand voice",
+      "check": "tone is confident, technical, direct, and human"
+    },
+    {
+      "name": "has_specifics",
+      "description": "Includes specific examples, data, or insights",
+      "check": "output contains concrete examples or numbers, not just abstractions"
+    }
+  ]
+}
