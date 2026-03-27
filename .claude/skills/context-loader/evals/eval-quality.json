@@ -26,6 +26,11 @@
       "name": "respects_token_budget",
       "description": "Stays within token budget guidelines",
       "check": "does not load excessive context for simple tasks"
+    },
+    {
+      "name": "progressive_loading",
+      "description": "Uses progressive mode for multi-step tasks — loads only what the current step needs",
+      "check": "for chunked execution, loads context per-step not all upfront; releases context no longer needed"
     }
   ]
 }

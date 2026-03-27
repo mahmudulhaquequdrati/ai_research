@@ -36,6 +36,11 @@
       "name": "updates_memory",
       "description": "Actually writes to memory files",
       "check": "agent_performance_log.md is updated with new entry"
+    },
+    {
+      "name": "chunk_compliance",
+      "description": "Verifies work followed the Chunked Execution Protocol — 500-line max, one chunk at a time",
+      "check": "evaluation checks whether output files exceed 500 lines and whether work was done in verified chunks"
     }
   ]
 }

@@ -18,6 +18,9 @@ Date | Agent | Task | Score | Issue | Action Taken
 2026-03-27 | ALL | Initial build eval | 6/10 | Missing guardrails, broken macOS script, inconsistent context-loader | See completed improvements
 2026-03-27 | ALL | Post-fix eval | 8/10 | All issues resolved | Health check PASS, all guardrails present
 
+### Log (continued)
+2026-03-27 | ALL | Chunked Execution Protocol | 9/10 | 3 eval gaps found and fixed | 84/84 tests pass, protocol enforced across all agents
+
 ## Improvement Queue
 (Empty — all identified issues resolved)
 
@@ -30,3 +33,12 @@ Date | Agent | Task | Score | Issue | Action Taken
 
 ### 2026-03-27 — Iteration 3 Fixes
 4. **Added ## Rules sections to context-loader and self-eval** — Completed guardrails on all 8/8 skills.
+
+### 2026-03-27 — Iteration 4: Chunked Execution Protocol
+5. **Added Chunked Execution Protocol to CLAUDE.md** — 9 rules: 500-line max, one chunk at a time, verify before advancing, progressive context, numbered checkpoints, size guardrails, Edit over Write, split before building, TodoWrite tracking.
+6. **Updated software-engineer** — Chunked implement (one function at a time), per-chunk testing, 500-line file max.
+7. **Updated project-orchestrator** — Atomic decomposition, checkpointed execution, independent verifiability.
+8. **Updated context-loader** — Progressive Mode for multi-step tasks, chunk-type loading table.
+9. **Updated 6 remaining agents** — Domain-specific chunking sections (brand-strategist, qa-evaluator, researcher, content-creator, automation-architect, social-media-manager).
+10. **Updated 3 eval files** — Added progressive_loading (context-loader), atomic_chunks (project-kickoff), chunk_compliance (self-eval).
+11. **Created test-chunked-execution.sh** — 84 tests across 10 categories. Found 3 failures (missing eval criteria), fixed all. Final: 84/84 PASS.

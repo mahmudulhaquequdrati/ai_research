@@ -36,6 +36,11 @@
       "name": "parallel_optimization",
       "description": "Plan uses parallel execution where possible",
       "check": "output indicates parallel tasks in at least one phase"
+    },
+    {
+      "name": "atomic_chunks",
+      "description": "Tasks are broken into atomic, independently verifiable chunks",
+      "check": "each task is small enough to verify alone (one function, one section, one component); no monolithic tasks"
     }
   ]
 }
