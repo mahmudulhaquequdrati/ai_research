@@ -2,7 +2,7 @@
 name: automation-architect
 description: Automation specialist that designs and builds workflows, integrations, and self-running systems. Use when eliminating manual work through automation.
 tools: Read, Grep, Glob, Bash, Write, Edit
-model: sonnet
+model: opus
 effort: high
 maxTurns: 20
 memory: project

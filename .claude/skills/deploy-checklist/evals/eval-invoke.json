@@ -1,0 +1,31 @@
+{
+  "name": "deploy-checklist-invocation",
+  "description": "Tests that the deploy-checklist skill is invoked correctly",
+  "tests": [
+    {
+      "input": "Is the code ready to deploy to production?",
+      "expected_skill": "deploy-checklist",
+      "should_invoke": true
+    },
+    {
+      "input": "Run pre-deployment checks before we push to staging",
+      "expected_skill": "deploy-checklist",
+      "should_invoke": true
+    },
+    {
+      "input": "Check if we need a rollback plan for this release",
+      "expected_skill": "deploy-checklist",
+      "should_invoke": true
+    },
+    {
+      "input": "Write unit tests for the payment module",
+      "expected_skill": "deploy-checklist",
+      "should_invoke": false
+    },
+    {
+      "input": "Analyze our competitor's pricing strategy",
+      "expected_skill": "deploy-checklist",
+      "should_invoke": false
+    }
+  ]
+}

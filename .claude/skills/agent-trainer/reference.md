@@ -12,6 +12,13 @@
 | Wrong tool | Tool list too permissive | Check allowed-tools frontmatter | Restrict to needed tools only |
 | Slow/expensive | Model too powerful for task | Check model setting | Use haiku/sonnet for simple tasks |
 | Loses focus | Instructions too long | Measure instruction length | Compress, move details to reference.md |
+| Over-engineered solution | Unclear scope boundaries | Check for "simplest solution" constraint | Add "minimum viable approach first" rule |
+| Wrong agent assigned | Task routing matrix incomplete | Review project-kickoff agent mapping | Update agent assignment matrix with new task type |
+| Stale memory used | No memory validation step | Check if context-loader verifies freshness | Add "verify memory is current" to context-loader |
+| Token budget exceeded | No context pruning | Check total tokens loaded per task | Add token limits to agent frontmatter, use haiku where possible |
+| Inconsistent brand voice | Brand guidelines not loaded | Check if brand_identity.md is in required context | Add brand_identity.md to context-loader for content tasks |
+| Security vulnerability introduced | No security checklist in agent | Check for OWASP reference | Add security review step to software-engineer process |
+| Hallucinated data | No data verification step | Check if output includes unverified claims | Add "verify all data against real sources" guardrail |
 
 ## Agent Health Check Template
 

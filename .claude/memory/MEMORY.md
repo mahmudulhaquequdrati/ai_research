@@ -19,3 +19,9 @@
 
 ## Feedback & Learnings
 - [feedback_log.md](feedback_log.md) — User corrections, preferences, and validated approaches
+
+## Quick Reference: System Capabilities
+- **8 Agents**: project-orchestrator, software-engineer, qa-evaluator, researcher, brand-strategist, automation-architect, content-creator, social-media-manager
+- **8 Skills**: code-review, market-research, agent-trainer, content-strategy, context-loader, deploy-checklist, project-kickoff, self-eval
+- **7 Commands**: /bootstrap (init), /context, /kickoff, /review, /eval, /train, /health
+- **Workflow**: `/bootstrap` → `/kickoff [project]` → work → `/review` → `/eval` → `/train` (if needed)

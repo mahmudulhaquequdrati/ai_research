@@ -1,0 +1,31 @@
+{
+  "name": "project-kickoff-invocation",
+  "description": "Tests that the project-kickoff skill is invoked correctly",
+  "tests": [
+    {
+      "input": "Start a new SaaS project for invoice management",
+      "expected_skill": "project-kickoff",
+      "should_invoke": true
+    },
+    {
+      "input": "Break down this feature into tasks and assign agents",
+      "expected_skill": "project-kickoff",
+      "should_invoke": true
+    },
+    {
+      "input": "Plan the implementation for a new e-commerce platform",
+      "expected_skill": "project-kickoff",
+      "should_invoke": true
+    },
+    {
+      "input": "Fix the CSS alignment on the dashboard",
+      "expected_skill": "project-kickoff",
+      "should_invoke": false
+    },
+    {
+      "input": "Evaluate our last sprint's performance",
+      "expected_skill": "project-kickoff",
+      "should_invoke": false
+    }
+  ]
+}

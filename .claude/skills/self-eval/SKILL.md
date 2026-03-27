@@ -62,9 +62,23 @@ If overall score >= 8/10:
 - Log as validated approach in feedback_log.md
 - Note what made it successful for future reference
 
+## Historical Trend Tracking
+After scoring, check `agent_performance_log.md` for previous scores and track the trend:
+- **Improving** (↑): Score higher than last 3 average → note what's working, keep doing it
+- **Stable** (→): Within ±0.5 of last 3 average → look for plateau-breaking opportunities
+- **Declining** (↓): Score lower than last 3 average → urgent root cause analysis, escalate fixes
+
+Log the trend direction with each eval entry:
+```
+Trend: [↑/→/↓] (current: X/10, last 3 avg: Y/10)
+```
+
+If 3+ consecutive declining scores: flag for full agent-trainer review of the underperforming agent.
+
 ## Rules
 - Never give 10/10 unless it truly exceeds all requirements
 - Never skip counting deliverables vs requirements
 - Never skip root cause analysis for scores < 8
 - Always update memory with learnings — future runs depend on it
 - Be brutally honest — inflated scores poison the improvement loop
+- Always include trend direction in performance log entries

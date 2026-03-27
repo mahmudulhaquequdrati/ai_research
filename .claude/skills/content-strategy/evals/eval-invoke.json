@@ -1,0 +1,31 @@
+{
+  "name": "content-strategy-invocation",
+  "description": "Tests that the content-strategy skill is invoked correctly",
+  "tests": [
+    {
+      "input": "Plan a content calendar for next month across all platforms",
+      "expected_skill": "content-strategy",
+      "should_invoke": true
+    },
+    {
+      "input": "Write a blog post about AI automation for SMBs",
+      "expected_skill": "content-strategy",
+      "should_invoke": true
+    },
+    {
+      "input": "What content should we create for LinkedIn this week?",
+      "expected_skill": "content-strategy",
+      "should_invoke": true
+    },
+    {
+      "input": "Deploy the app to production",
+      "expected_skill": "content-strategy",
+      "should_invoke": false
+    },
+    {
+      "input": "Review the PR for security issues",
+      "expected_skill": "content-strategy",
+      "should_invoke": false
+    }
+  ]
+}

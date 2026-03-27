@@ -27,6 +27,20 @@ type: project
 - Tech-forward but not cold
 - Blue/dark tones for trust and expertise (specifics TBD)
 
+## Differentiation Matrix
+| Claim | Proof | Competitor Gap |
+|-------|-------|---------------|
+| We build AND use AI daily | Our own agent system runs our business | Most agencies outsource or use basic tools |
+| Full-stack: idea to production | End-to-end delivery, not just consulting | Consultants advise but don't ship |
+| Self-improving systems | Autoresearch loop, agents that learn | Nobody else offers agents that get smarter |
+| ROI-first, not tech-first | Every recommendation includes ROI analysis | Competitors sell technology, we sell outcomes |
+
+## Anti-Positioning (What We Are NOT)
+- Not a generic "AI agency" — we're engineers who build production systems
+- Not a consulting firm — we ship code, not slide decks
+- Not a body shop — we deliver outcomes, not hours
+- Not hype-driven — we underpromise and overdeliver
+
 ## Tagline Candidates
 - "AI that works. Software that ships."
 - "From idea to production, powered by AI."

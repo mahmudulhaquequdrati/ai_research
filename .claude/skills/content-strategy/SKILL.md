@@ -4,6 +4,8 @@ description: Content planning and creation skill. Plans content calendars, write
 argument-hint: "[topic-or-platform]"
 user-invocable: true
 allowed-tools: Read, Grep, Glob, Write
+model: sonnet
+effort: medium
 ---
 
 # Content Strategy Skill

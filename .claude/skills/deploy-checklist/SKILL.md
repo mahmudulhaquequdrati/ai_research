@@ -3,6 +3,8 @@ name: deploy-checklist
 description: Pre-deployment verification gate. Ensures code is tested, reviewed, secure, and production-ready before any deployment. Use before deploying to staging or production.
 user-invocable: true
 allowed-tools: Read, Grep, Glob, Bash
+model: sonnet
+effort: medium
 ---
 
 # Deployment Checklist Skill

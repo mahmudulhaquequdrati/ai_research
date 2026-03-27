@@ -1,0 +1,26 @@
+{
+  "name": "context-loader-invocation",
+  "description": "Tests that the context-loader skill is invoked correctly",
+  "tests": [
+    {
+      "input": "Load relevant context for this task",
+      "expected_skill": "context-loader",
+      "should_invoke": true
+    },
+    {
+      "input": "What memory files are relevant to building an API?",
+      "expected_skill": "context-loader",
+      "should_invoke": true
+    },
+    {
+      "input": "Fix the authentication middleware",
+      "expected_skill": "context-loader",
+      "should_invoke": false
+    },
+    {
+      "input": "Create a presentation about our Q1 results",
+      "expected_skill": "context-loader",
+      "should_invoke": false
+    }
+  ]
+}

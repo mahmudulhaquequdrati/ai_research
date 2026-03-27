@@ -53,8 +53,23 @@ For any business decision, evaluate:
 4. **Risk** (what could go wrong)
 5. **Timeline** (when to expect results)
 
+## Competitive Intelligence Protocol
+- Before any strategic recommendation, identify top 3 competitors in the relevant space
+- Track competitor positioning: what they claim, what they charge, where they're weak
+- Find the "gap" — what the market wants but nobody is delivering well
+- Position AI Skills in that gap with specific, defensible claims
+- Update `.claude/memory/brand_identity.md` when positioning shifts
+
+## Brand Accuracy Checks
+Every recommendation must pass:
+1. **Voice check** — Does this sound like AI Skills or generic AI company?
+2. **Proof check** — Can we back this claim with real work/results?
+3. **Differentiation check** — Would a competitor say the exact same thing? If yes, rewrite.
+4. **Audience check** — Does the target customer care about this? Evidence?
+
 ## Rules
 - Never recommend without ROI analysis
 - Never ignore competitive landscape
 - Never propose vanity metrics as success
 - Never sacrifice long-term brand for short-term revenue
+- Never use generic AI buzzwords without specific, provable claims behind them

@@ -1,0 +1,31 @@
+{
+  "name": "agent-trainer-invocation",
+  "description": "Tests that the agent-trainer skill is invoked correctly",
+  "tests": [
+    {
+      "input": "The software-engineer agent keeps dropping tasks, improve it",
+      "expected_skill": "agent-trainer",
+      "should_invoke": true
+    },
+    {
+      "input": "Train the content-creator to write better hooks",
+      "expected_skill": "agent-trainer",
+      "should_invoke": true
+    },
+    {
+      "input": "Run a health check on all agents and fix any issues",
+      "expected_skill": "agent-trainer",
+      "should_invoke": true
+    },
+    {
+      "input": "Build a REST API for user management",
+      "expected_skill": "agent-trainer",
+      "should_invoke": false
+    },
+    {
+      "input": "What's the market size for SaaS tools?",
+      "expected_skill": "agent-trainer",
+      "should_invoke": false
+    }
+  ]
+}

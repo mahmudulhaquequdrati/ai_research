@@ -1,0 +1,31 @@
+{
+  "name": "market-research-invocation",
+  "description": "Tests that the market-research skill is invoked correctly",
+  "tests": [
+    {
+      "input": "Analyze the market opportunity for AI-powered CRM tools",
+      "expected_skill": "market-research",
+      "should_invoke": true
+    },
+    {
+      "input": "Who are our competitors in the automation space?",
+      "expected_skill": "market-research",
+      "should_invoke": true
+    },
+    {
+      "input": "What's the TAM for developer tools in 2026?",
+      "expected_skill": "market-research",
+      "should_invoke": true
+    },
+    {
+      "input": "Fix the bug in the login page",
+      "expected_skill": "market-research",
+      "should_invoke": false
+    },
+    {
+      "input": "Write a LinkedIn post about our new feature",
+      "expected_skill": "market-research",
+      "should_invoke": false
+    }
+  ]
+}

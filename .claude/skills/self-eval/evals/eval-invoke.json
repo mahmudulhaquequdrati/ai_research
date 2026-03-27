@@ -1,0 +1,31 @@
+{
+  "name": "self-eval-invocation",
+  "description": "Tests that the self-eval skill is invoked correctly",
+  "tests": [
+    {
+      "input": "Evaluate the quality of the work we just completed",
+      "expected_skill": "self-eval",
+      "should_invoke": true
+    },
+    {
+      "input": "Score the last task and log learnings",
+      "expected_skill": "self-eval",
+      "should_invoke": true
+    },
+    {
+      "input": "How did we do on that project? Run a retrospective",
+      "expected_skill": "self-eval",
+      "should_invoke": true
+    },
+    {
+      "input": "Build a new REST API endpoint for users",
+      "expected_skill": "self-eval",
+      "should_invoke": false
+    },
+    {
+      "input": "Research the market for AI writing tools",
+      "expected_skill": "self-eval",
+      "should_invoke": false
+    }
+  ]
+}
