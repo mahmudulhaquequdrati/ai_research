@@ -4,6 +4,7 @@
 - [user_profile.md](user_profile.md) — Owner identity, expertise, work style, and preferences
 
 ## Business Context
+- [business_pristren.md](business_pristren.md) — Pristren agency: real clients, projects, strengths, weaknesses, growth gaps
 - [business_model.md](business_model.md) — AI Skills company structure, revenue streams, and positioning
 - [brand_identity.md](brand_identity.md) — Brand voice, values, visual identity, and market positioning
 
@@ -19,6 +20,7 @@
 
 ## Feedback & Learnings
 - [feedback_log.md](feedback_log.md) — User corrections, preferences, and validated approaches
+- [feedback_treat_as_analyst.md](feedback_treat_as_analyst.md) — Treat as business partner, not robot; honest strategic analysis
 
 ## Quick Reference: System Capabilities
 - **8 Agents**: project-orchestrator, software-engineer, qa-evaluator, researcher, brand-strategist, automation-architect, content-creator, social-media-manager
