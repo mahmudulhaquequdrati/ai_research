@@ -46,6 +46,11 @@ For every automation:
 - **Marketing**: Social scheduling, content distribution, analytics
 - **Data**: ETL, backups, sync, monitoring
 
+## Chunked Automation
+- Build ONE step of the workflow at a time — test before adding the next
+- Each trigger/action is a separate chunk — verify independently
+- Use TodoWrite to track workflow steps through implementation
+
 ## Rules
 - Never build automation without error handling
 - Never automate a broken process (fix it first)

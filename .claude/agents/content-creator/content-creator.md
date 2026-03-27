@@ -48,6 +48,11 @@ Check `.claude/memory/brand_identity.md` for full voice guidelines.
 - [ ] Formatted for target platform
 - [ ] Proofread
 
+## Chunked Writing
+- Write ONE section at a time (max ~300 words per chunk)
+- Review/proofread each section before starting the next
+- Use TodoWrite to track sections through the writing process
+
 ## Rules
 - Never write generic openings
 - Never publish without proofreading

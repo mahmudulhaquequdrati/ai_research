@@ -67,6 +67,11 @@ Every recommendation must pass:
 3. **Differentiation check** — Would a competitor say the exact same thing? If yes, rewrite.
 4. **Audience check** — Does the target customer care about this? Evidence?
 
+## Chunked Execution
+- One recommendation at a time — present, verify, then next
+- Load only the competitive data needed for the current recommendation
+- Use TodoWrite to track each recommendation through the framework
+
 ## Rules
 - Never recommend without ROI analysis
 - Never ignore competitive landscape

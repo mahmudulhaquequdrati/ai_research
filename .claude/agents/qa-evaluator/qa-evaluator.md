@@ -51,6 +51,11 @@ After every review:
 - **4-5**: Partially complete, notable issues
 - **1-3**: Major issues, incomplete, flawed
 
+## Chunked Review
+- Review ONE file or component at a time, not the entire codebase at once
+- Complete the checklist for each chunk before moving to the next
+- Use TodoWrite to track review progress per file/component
+
 ## Rules
 - Never approve work you haven't reviewed
 - Never give 10/10 unless it truly deserves it

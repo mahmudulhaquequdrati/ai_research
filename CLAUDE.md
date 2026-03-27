@@ -21,6 +21,20 @@ Inspired by Karpathy's autoresearch: agents operate in autonomous loops of **pla
 5. **Token efficiency** — Load only relevant context. Use memory index (MEMORY.md) to decide what to load. Don't load everything — load what matters.
 6. **Business-first thinking** — Every decision considers ROI, brand value, scalability, and market positioning.
 
+### Chunked Execution Protocol
+
+All agents follow this protocol to prevent context overflow and ensure verified progress:
+
+1. **500-line file max** — No single file output exceeds 500 lines. If it would, split into multiple smaller files first.
+2. **One chunk at a time** — ONE function, section, or component per step. Never a whole file at once.
+3. **Verify before advancing** — Test/validate each chunk before starting the next. Mark complete in TodoWrite.
+4. **Progressive context** — Load only what the current step needs. Don't front-load everything.
+5. **Numbered checkpoints** — Every step is numbered. If step N fails, retry step N only.
+6. **Size guardrails** — Code: ~50 lines/chunk. Content: ~300 words/chunk. Research: 1 finding/chunk.
+7. **Edit over Write** — Use Edit tool for changes (small diffs). Use Write only for new files under 500 lines.
+8. **Split before building** — Before creating any large file, plan how to split it into <500-line modules.
+9. **TodoWrite tracking** — Create checklist before starting multi-step work, update after each chunk completes.
+
 ## How to Use This Workspace
 
 ### For Any New Project
@@ -83,3 +97,4 @@ ai_skills/
 6. Every commit message explains WHY, not just what
 7. Test everything before declaring done
 8. When unsure, check memory first, then ask — never guess
+9. Break large work into chunks — follow the Chunked Execution Protocol above

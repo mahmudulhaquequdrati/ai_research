@@ -47,6 +47,20 @@ See [reference.md](reference.md) for the loading matrix.
 - Remove anything not relevant to THIS specific task
 - Keep total loaded context lean
 
+### 6. Progressive Mode (for Chunked Execution)
+When loading context for a multi-step task:
+- Step 1: Load ONLY core context (CLAUDE.md + MEMORY.md + feedback_log.md)
+- Step N: Load ONLY the files/context needed for that specific step
+- Between steps: release context no longer needed (don't carry forward)
+- Never pre-load context "in case it's needed later"
+
+| Chunk Type | Load | Skip |
+|------------|------|------|
+| Writing a function | The file being edited, its imports | Unrelated project files |
+| Writing content | Brand voice, section outline | Full content plan |
+| Research finding | Current question, sources | Previous findings |
+| Planning a phase | Phase requirements, dependencies | Other phases |
+
 ## Token Budgets
 - Simple task: < 2000 tokens of context
 - Medium task: < 5000 tokens
