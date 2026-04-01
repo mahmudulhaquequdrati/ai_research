@@ -55,6 +55,10 @@ All agents follow this protocol to prevent context overflow and ensure verified 
 | Project management | project-orchestrator | all relevant |
 | Code review/QA | qa-evaluator | software-engineer |
 | Content creation | content-creator | social-media-manager |
+| Video scripting | video-producer | researcher |
+| Video editing | video-editor | video-producer |
+| Video production | video-producer | video-editor, social-media-manager |
+| Content repurposing | social-media-manager | video-editor, content-creator |
 
 ### Task Completion Protocol
 Before marking ANY task complete:
